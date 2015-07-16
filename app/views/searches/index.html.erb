@@ -1,0 +1,15 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Search Results</h1>
+
+<h3> Keyword: <%= @search %> </h3>
+
+
+<% @results.each do |word| %> 
+      <tr>
+        <td><%= word.name %></td>
+      </tr>
+      <%end%>
+<br>
+<br>
+<%= link_to 'New Search', new_search_path %>
