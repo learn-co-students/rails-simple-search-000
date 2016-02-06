@@ -47,14 +47,14 @@ group :test, :development do
   gem "pry", '~> 0.10.3'
   gem "guard-rspec", require: false
   gem "thin", '~> 1.6.4'
-  gem 'capybara-webkit', '~> 1.7.1'
+  # gem 'capybara-webkit', '~> 1.7.1'
 end
 
-group :production do
-  gem "pg"
-  gem "google-analytics-rails"
-  gem "rails_12factor"
-end
+#group :production do
+#  gem "pg"
+#  gem "google-analytics-rails"
+#  gem "rails_12factor"
+#end
 
 gem "bootstrap-sass", "~> 3.1.1"
 gem 'faker'
