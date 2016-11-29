@@ -1,0 +1,9 @@
+<h1>Search</h1>
+
+<%= form_tag("/search/index", method: "get") do %>
+  <%= label_tag(:keyword, "Search for:") %>
+  <%= text_field_tag(:keyword) %>
+  <%= submit_tag("Search") %>
+<% end %>
+
+<a href="/words/index">Words</a>
